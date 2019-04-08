@@ -48,19 +48,15 @@ public class Pickupper : MonoBehaviour
     //NOTE: This is the trigger you should have set up.
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.transform.tag == "pickupable")
         {
-         
             pickups.Add(other.gameObject);
-      
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-
-        if (other.transform.tag == "pickupable")
+       if (other.transform.tag == "pickupable")
         {
             pickups.Remove(other.gameObject);
             if (pickups.Count == 0)
@@ -75,8 +71,6 @@ public class Pickupper : MonoBehaviour
     //IE Input.GetButtonDown(myButtonName) {Pickupper1.buttonCheck()}
     public void ButtonCheck()
     {
-
-       
         if (buttonDown)
         {
             buttonDown = false;
@@ -123,7 +117,6 @@ public class Pickupper : MonoBehaviour
     //Debug button fire
     public void PickUp()
     {
-
         ButtonCheck();
     }
 
