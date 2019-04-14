@@ -69,10 +69,8 @@ public class RigidBodyController : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == ("Ground") && isGrounded == false)
-        {
+        if ((col.gameObject.tag == "Ground" || col.gameObject.tag == "terrain") && isGrounded == false)
             isGrounded = true;
-        }
     }
 
 }

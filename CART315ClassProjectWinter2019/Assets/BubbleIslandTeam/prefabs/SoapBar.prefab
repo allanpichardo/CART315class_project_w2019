@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2646618937292832366}
   m_Layer: 0
   m_Name: SoapBar
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,6 +55,14 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 6a9b35ebd4f2e40bf994b91bbc7e1656, type: 3}
       propertyPath: m_Name
       value: soap+bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 6a9b35ebd4f2e40bf994b91bbc7e1656, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6a9b35ebd4f2e40bf994b91bbc7e1656, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6a9b35ebd4f2e40bf994b91bbc7e1656, type: 3}
       propertyPath: m_LocalPosition.x

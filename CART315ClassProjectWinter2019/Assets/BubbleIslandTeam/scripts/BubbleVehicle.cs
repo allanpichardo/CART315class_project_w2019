@@ -24,7 +24,8 @@ public class BubbleVehicle : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!(collision.gameObject.CompareTag("ActivePlayer")))
+        print(collision.gameObject);
+        if (!collision.gameObject.CompareTag("ActivePlayer"))
         {
             //print("pop bubble");
 
