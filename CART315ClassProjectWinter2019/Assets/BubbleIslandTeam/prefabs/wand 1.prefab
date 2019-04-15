@@ -52,11 +52,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1621274951009524789}
     m_Modifications:
-    - target: {fileID: 1792266346523212931, guid: 3d985c1ec252c490b9bd6f977daaebe4,
-        type: 3}
-      propertyPath: m_Name
-      value: Wand
-      objectReference: {fileID: 0}
     - target: {fileID: 1792266346522779811, guid: 3d985c1ec252c490b9bd6f977daaebe4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -127,6 +122,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1792266346523212931, guid: 3d985c1ec252c490b9bd6f977daaebe4,
+        type: 3}
+      propertyPath: m_Name
+      value: Wand
+      objectReference: {fileID: 0}
     - target: {fileID: 6458602909596419047, guid: 3d985c1ec252c490b9bd6f977daaebe4,
         type: 3}
       propertyPath: m_Size.x
@@ -159,13 +159,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767056603279851990, guid: 3d985c1ec252c490b9bd6f977daaebe4,
         type: 3}
+      propertyPath: SubModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767056603279851990, guid: 3d985c1ec252c490b9bd6f977daaebe4,
+        type: 3}
       propertyPath: SubModule.subEmitters.Array.data[0].emitter
       value: 
       objectReference: {fileID: 3963837328997030944}
-    - target: {fileID: 7767056603279851990, guid: 3d985c1ec252c490b9bd6f977daaebe4,
+    - target: {fileID: 6458602909596419048, guid: 3d985c1ec252c490b9bd6f977daaebe4,
         type: 3}
-      propertyPath: SubModule.enabled
-      value: 0
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d985c1ec252c490b9bd6f977daaebe4, type: 3}
