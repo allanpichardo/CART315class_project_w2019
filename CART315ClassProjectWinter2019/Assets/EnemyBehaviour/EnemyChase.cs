@@ -24,7 +24,6 @@ public class EnemyChase : MonoBehaviour
     
 
     // Values to access NavMesh
-    private NavMeshController controller;
     private NavMeshAgent agent;
     
     private GameObject player;
@@ -37,10 +36,7 @@ public class EnemyChase : MonoBehaviour
         
         // Find the active player defined by Become Script
         player = GameObject.FindWithTag("ActivePlayer");
-        
-        // Get the NavMeshAgent components
-        controller = GetComponent<NavMeshController>(); 
-        agent = controller.GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update() {
@@ -53,7 +49,7 @@ public void StartChasing() {
     float distance = Vector3.Distance(transform.position, player.transform.position);
    
     if (distance < DistanceDetect) {
-   controller.NavMeshProvider(player.transform.position); 
+   agent.SetDestination(player.transform.position); 
    agent.stoppingDistance = 2f;
     }
 }    

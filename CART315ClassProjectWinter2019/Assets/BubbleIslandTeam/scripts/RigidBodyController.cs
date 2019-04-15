@@ -21,6 +21,7 @@ public class RigidBodyController : MonoBehaviour
         characterBod = GetComponent<Rigidbody>();
         rotateXAxis = characterBod.transform.eulerAngles.x;
         rotateYAxis = characterBod.transform.eulerAngles.y;
+        Cursor.visible = false;
     }
 
     public void Locomote(Vector3 direction)
@@ -43,8 +44,8 @@ public class RigidBodyController : MonoBehaviour
         //if (Input.GetMouseButton(0))
         //{
             rotateYAxis += 3 * Input.GetAxis("Mouse X");
-            rotateXAxis += 3 * Input.GetAxis("Mouse Y");
-       // }
+            rotateXAxis -= 3 * Input.GetAxis("Mouse Y");
+//       // }
         characterBod.transform.rotation = Quaternion.Euler(0, rotateYAxis, 0);
 
         Become cam = GameObject.Find("Camera_Become").GetComponent<Become>();
