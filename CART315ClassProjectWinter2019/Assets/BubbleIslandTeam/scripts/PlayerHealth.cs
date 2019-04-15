@@ -38,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        print(collision);
         if (collision.gameObject.tag == "enemy")
         {
             lives--;
