@@ -69,6 +69,7 @@
     <Compile Include="Assets\BubbleIslandTeam\scripts\BubbleEntrance.cs" />
     <Compile Include="Assets\BubbleIslandTeam\scripts\BubbleVehicle.cs" />
     <Compile Include="Assets\BubbleIslandTeam\scripts\DuckDetection.cs" />
+    <Compile Include="Assets\BubbleIslandTeam\scripts\Enemy.cs" />
     <Compile Include="Assets\BubbleIslandTeam\scripts\Fan.cs" />
     <Compile Include="Assets\BubbleIslandTeam\scripts\ParticleDecalData.cs" />
     <Compile Include="Assets\BubbleIslandTeam\scripts\ParticleDecalPool.cs" />

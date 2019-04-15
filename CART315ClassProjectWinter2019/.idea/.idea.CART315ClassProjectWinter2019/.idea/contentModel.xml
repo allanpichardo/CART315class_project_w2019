@@ -26,6 +26,7 @@
             <e p="BubbleEntrance.cs" t="Include" />
             <e p="BubbleVehicle.cs" t="Include" />
             <e p="DuckDetection.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
             <e p="Fan.cs" t="Include" />
             <e p="ParticleDecalData.cs" t="Include" />
             <e p="ParticleDecalPool.cs" t="Include" />
