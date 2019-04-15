@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
     public float lookDistance = 10.0f;
+    public bool patrol = false;
 
     private NavMeshAgent agent;
 
@@ -27,6 +28,13 @@ public class Enemy : MonoBehaviour
             if (distance <= lookDistance)
             {
                 agent.SetDestination(player.transform.position);
+            }
+            else if(patrol && agent.remainingDistance < 1.0f)
+            {
+                float x = Random.Range(0, lookDistance);
+                float y = 0.0f;
+                float z = Random.Range(0, lookDistance);
+                agent.SetDestination(player.transform.position + new Vector3(x, y, z));
             }
         }
     }

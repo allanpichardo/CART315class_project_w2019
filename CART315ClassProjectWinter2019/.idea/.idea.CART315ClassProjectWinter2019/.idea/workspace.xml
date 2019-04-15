@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2180e54a-27b0-4b2a-88a0-74bde3c3cf48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CART315ClassProjectWinter2019/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CART315ClassProjectWinter2019/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/BubbleIsland.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/BubbleIsland.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/prefabs/SoapBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/prefabs/SoapBar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,15 +56,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="420">
+              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
               <folding>
-                <marker date="1555295882008" expanded="false" signature="6:100" ph="..." />
-                <marker date="1555295882008" expanded="true" signature="136:821" ph="{...}" />
-                <marker date="1555295882008" expanded="true" signature="312:447" ph="{...}" />
-                <marker date="1555295882008" expanded="true" signature="505:819" ph="{...}" />
-                <marker date="1555295882008" expanded="true" signature="531:813" ph="{...}" />
-                <marker date="1555295882008" expanded="true" signature="710:803" ph="{...}" />
+                <marker date="1555296533147" expanded="false" signature="6:100" ph="..." />
+                <marker date="1555296533147" expanded="true" signature="136:1177" ph="{...}" />
+                <marker date="1555296533147" expanded="true" signature="344:479" ph="{...}" />
+                <marker date="1555296533147" expanded="true" signature="537:1175" ph="{...}" />
+                <marker date="1555296533147" expanded="true" signature="563:1169" ph="{...}" />
+                <marker date="1555296533147" expanded="true" signature="742:835" ph="{...}" />
+                <marker date="1555296533147" expanded="true" signature="897:1159" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -208,7 +204,7 @@
       <workItem from="1553282370503" duration="1185000" />
       <workItem from="1553359611423" duration="351000" />
       <workItem from="1554302172068" duration="3032000" />
-      <workItem from="1555286420983" duration="4280000" />
+      <workItem from="1555286420983" duration="4773000" />
     </task>
     <task id="LOCAL-00001" summary="Created skeleton API of Use function">
       <created>1550164066647</created>
@@ -221,7 +217,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25355000" />
+    <option name="totallyTimeSpent" value="25848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,15 +527,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="420">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
           <folding>
-            <marker date="1555295882008" expanded="false" signature="6:100" ph="..." />
-            <marker date="1555295882008" expanded="true" signature="136:821" ph="{...}" />
-            <marker date="1555295882008" expanded="true" signature="312:447" ph="{...}" />
-            <marker date="1555295882008" expanded="true" signature="505:819" ph="{...}" />
-            <marker date="1555295882008" expanded="true" signature="531:813" ph="{...}" />
-            <marker date="1555295882008" expanded="true" signature="710:803" ph="{...}" />
+            <marker date="1555296533147" expanded="false" signature="6:100" ph="..." />
+            <marker date="1555296533147" expanded="true" signature="136:1177" ph="{...}" />
+            <marker date="1555296533147" expanded="true" signature="344:479" ph="{...}" />
+            <marker date="1555296533147" expanded="true" signature="537:1175" ph="{...}" />
+            <marker date="1555296533147" expanded="true" signature="563:1169" ph="{...}" />
+            <marker date="1555296533147" expanded="true" signature="742:835" ph="{...}" />
+            <marker date="1555296533147" expanded="true" signature="897:1159" ph="{...}" />
           </folding>
         </state>
       </provider>
