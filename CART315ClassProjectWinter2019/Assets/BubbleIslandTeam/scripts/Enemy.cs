@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("ActivePlayer");
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponentInChildren<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -22,11 +22,11 @@ public class Enemy : MonoBehaviour
     {
         if (player)
         {
-            float distance = Vector3.Distance(transform.InverseTransformPoint(player.transform.position), transform.position);
+            float distance = Vector3.Distance(player.transform.position, transform.position);
             Debug.Log(distance);
             if (distance <= lookDistance)
             {
-                agent.SetDestination(transform.InverseTransformPoint(player.transform.position));
+                agent.SetDestination(player.transform.position);
             }
         }
     }

@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2180e54a-27b0-4b2a-88a0-74bde3c3cf48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CART315ClassProjectWinter2019/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CART315ClassProjectWinter2019/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CART315ClassProjectWinter2019/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CART315ClassProjectWinter2019/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/BubbleIsland.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/BubbleIsland.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/prefabs/SoapBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/prefabs/SoapBar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyBehaviour/EnemyChase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EnemyBehaviour/EnemyChase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/EnemyBehaviour/EnemyChase.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
+            <state relative-caret-position="217">
               <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
               <folding>
                 <marker date="1555291387555" expanded="false" signature="6:100" ph="..." />
@@ -36,40 +36,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            <state relative-caret-position="260">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
-                <marker date="1555292649249" expanded="false" signature="6:78" ph="..." />
-                <marker date="1555292649249" expanded="true" signature="128:2328" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="711:893" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="938:1271" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="1298:1930" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="1313:1355" ph="/* if (Input.GetMouseButton(0)) ... */" />
-                <marker date="1555292649249" expanded="true" signature="1677:1792" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="1805:1924" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="1953:2137" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="1983:2123" ph="{...}" />
-                <marker date="1555292649249" expanded="true" signature="2178:2325" ph="{...}" />
+                <marker date="1555295059878" expanded="false" signature="6:78" ph="..." />
+                <marker date="1555295059878" expanded="true" signature="128:2360" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="711:925" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="970:1303" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="1330:1962" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="1345:1387" ph="/* if (Input.GetMouseButton(0)) ... */" />
+                <marker date="1555295059878" expanded="true" signature="1709:1824" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="1837:1956" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="1985:2169" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="2015:2155" ph="{...}" />
+                <marker date="1555295059878" expanded="true" signature="2210:2357" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+            <state relative-caret-position="195">
+              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
               <folding>
-                <marker date="1555292572379" expanded="false" signature="6:100" ph="..." />
-                <marker date="1555292572379" expanded="true" signature="136:877" ph="{...}" />
-                <marker date="1555292572379" expanded="true" signature="312:437" ph="{...}" />
-                <marker date="1555292572379" expanded="true" signature="495:875" ph="{...}" />
-                <marker date="1555292572379" expanded="true" signature="521:869" ph="{...}" />
-                <marker date="1555292572379" expanded="true" signature="733:859" ph="{...}" />
+                <marker date="1555295882008" expanded="false" signature="6:100" ph="..." />
+                <marker date="1555295882008" expanded="true" signature="136:821" ph="{...}" />
+                <marker date="1555295882008" expanded="true" signature="312:447" ph="{...}" />
+                <marker date="1555295882008" expanded="true" signature="505:819" ph="{...}" />
+                <marker date="1555295882008" expanded="true" signature="531:813" ph="{...}" />
+                <marker date="1555295882008" expanded="true" signature="710:803" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -115,8 +115,8 @@
         <option value="$PROJECT_DIR$/Assets/BubbleIslandTeam/Scripts/Watergun.cs" />
         <option value="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Fan.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyBehaviour/EnemyChase.cs" />
-        <option value="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -208,7 +208,7 @@
       <workItem from="1553282370503" duration="1185000" />
       <workItem from="1553359611423" duration="351000" />
       <workItem from="1554302172068" duration="3032000" />
-      <workItem from="1555286420983" duration="3321000" />
+      <workItem from="1555286420983" duration="4280000" />
     </task>
     <task id="LOCAL-00001" summary="Created skeleton API of Use function">
       <created>1550164066647</created>
@@ -221,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24396000" />
+    <option name="totallyTimeSpent" value="25355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -244,7 +244,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3987034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -495,7 +495,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/EnemyBehaviour/EnemyChase.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="217">
           <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
           <folding>
             <marker date="1555291387555" expanded="false" signature="6:100" ph="..." />
@@ -509,37 +509,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+        <state relative-caret-position="260">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <marker date="1555292572379" expanded="false" signature="6:100" ph="..." />
-            <marker date="1555292572379" expanded="true" signature="136:877" ph="{...}" />
-            <marker date="1555292572379" expanded="true" signature="312:437" ph="{...}" />
-            <marker date="1555292572379" expanded="true" signature="495:875" ph="{...}" />
-            <marker date="1555292572379" expanded="true" signature="521:869" ph="{...}" />
-            <marker date="1555292572379" expanded="true" signature="733:859" ph="{...}" />
+            <marker date="1555295059878" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555295059878" expanded="true" signature="128:2360" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="711:925" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="970:1303" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="1330:1962" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="1345:1387" ph="/* if (Input.GetMouseButton(0)) ... */" />
+            <marker date="1555295059878" expanded="true" signature="1709:1824" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="1837:1956" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="1985:2169" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="2015:2155" ph="{...}" />
+            <marker date="1555295059878" expanded="true" signature="2210:2357" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/RigidBodyController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/BubbleIslandTeam/scripts/Enemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
           <folding>
-            <marker date="1555292649249" expanded="false" signature="6:78" ph="..." />
-            <marker date="1555292649249" expanded="true" signature="128:2328" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="711:893" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="938:1271" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="1298:1930" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="1313:1355" ph="/* if (Input.GetMouseButton(0)) ... */" />
-            <marker date="1555292649249" expanded="true" signature="1677:1792" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="1805:1924" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="1953:2137" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="1983:2123" ph="{...}" />
-            <marker date="1555292649249" expanded="true" signature="2178:2325" ph="{...}" />
+            <marker date="1555295882008" expanded="false" signature="6:100" ph="..." />
+            <marker date="1555295882008" expanded="true" signature="136:821" ph="{...}" />
+            <marker date="1555295882008" expanded="true" signature="312:447" ph="{...}" />
+            <marker date="1555295882008" expanded="true" signature="505:819" ph="{...}" />
+            <marker date="1555295882008" expanded="true" signature="531:813" ph="{...}" />
+            <marker date="1555295882008" expanded="true" signature="710:803" ph="{...}" />
           </folding>
         </state>
       </provider>

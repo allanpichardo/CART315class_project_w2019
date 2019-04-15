@@ -21,6 +21,7 @@ public class RigidBodyController : MonoBehaviour
         characterBod = GetComponent<Rigidbody>();
         rotateXAxis = characterBod.transform.eulerAngles.x;
         rotateYAxis = characterBod.transform.eulerAngles.y;
+        Cursor.visible = false;
     }
 
     public void Locomote(Vector3 direction)
