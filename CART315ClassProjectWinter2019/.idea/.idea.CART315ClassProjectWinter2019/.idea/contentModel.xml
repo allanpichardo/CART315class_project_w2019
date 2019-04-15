@@ -26,11 +26,23 @@
             <e p="BubbleEntrance.cs" t="Include" />
             <e p="BubbleVehicle.cs" t="Include" />
             <e p="DuckDetection.cs" t="Include" />
+            <e p="Fan.cs" t="Include" />
             <e p="ParticleDecalData.cs" t="Include" />
             <e p="ParticleDecalPool.cs" t="Include" />
             <e p="ParticleLauncher.cs" t="Include" />
+            <e p="Pickupper.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
+            <e p="RigidBodyController.cs" t="Include" />
+            <e p="Rotate.cs" t="Include" />
             <e p="SetRenderQueue.cs" t="Include" />
+            <e p="Spawner.cs" t="Include" />
             <e p="SplatOnCollision.cs" t="Include" />
+            <e p="TurnFan.cs" t="Include" />
+            <e p="Use" t="Include">
+              <e p="Usable.cs" t="Include" />
+              <e p="UseTarget.cs" t="Include" />
+            </e>
+            <e p="UseController.cs" t="Include" />
             <e p="Watergun.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
@@ -134,7 +146,6 @@
           </e>
         </e>
         <e p="NavMeshController.cs" t="Include" />
-        <e p="Pickupper.cs" t="Include" />
         <e p="Projectile.cs" t="Include" />
         <e p="Protect.cs" t="Include" />
         <e p="Resources" t="Include">
@@ -142,11 +153,9 @@
             <e p="DestroyByTimer.cs" t="Include" />
           </e>
         </e>
-        <e p="RigidBodyController.cs" t="Include" />
         <e p="Spawner" t="Include">
           <e p="ClickDestroyer.cs" t="Include" />
         </e>
-        <e p="Spawner.cs" t="Include" />
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
             <e p="Scripts" t="Include">
@@ -330,11 +339,6 @@
         <e p="ThirdPersonUserControl.cs" t="Include" />
         <e p="Throw.cs" t="Include" />
         <e p="ThrowTest.cs" t="Include" />
-        <e p="Use" t="Include">
-          <e p="Usable.cs" t="Include" />
-          <e p="UseTarget.cs" t="Include" />
-        </e>
-        <e p="UseController.cs" t="Include" />
         <e p="western-props-pack" t="Include">
           <e p="README.txt" t="Include" />
         </e>
@@ -354,6 +358,6 @@
       </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CART315ClassProjectWinter2019.585800675.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CART315ClassProjectWinter2019.14612444.00" t="ExcludeRecursive" />
   </component>
 </project>
