@@ -38,8 +38,8 @@ public class Pickupper : MonoBehaviour
             if (inRange && pickup.gameObject != null)
             {
                 pickup.GetComponent<Rigidbody>().useGravity = false;
-                pickup.transform.position = grabPoint.transform.position;
                 pickup.transform.parent = grabPoint.transform;
+                pickup.transform.SetPositionAndRotation(grabPoint.position, grabPoint.rotation);
             }
         }   
     }

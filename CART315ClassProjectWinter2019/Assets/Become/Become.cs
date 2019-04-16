@@ -32,6 +32,7 @@ public class Become : MonoBehaviour
         firstCamPosition = GetComponent<Transform>().localPosition;
         thirdCamPosition = firstCamPosition + new Vector3(0,5,-5);
         actionThrow = GetComponent<Throw>();
+        actionPickup = transform.root.GetComponent<Pickupper>() != null ? transform.root.GetComponent<Pickupper>() : transform.root.GetComponentInChildren<Pickupper>();
         
         // set the current object to ActivePlayer
         gameObject.transform.parent.tag = "ActivePlayer";
@@ -99,6 +100,14 @@ public class Become : MonoBehaviour
                 {
                     usable.Use();
                 }
+                else
+                {
+                    UseTarget target = actionPickup.HeldObject().GetComponent<UseTarget>();
+                    if (target)
+                    {
+                        target.Use();
+                    }
+                }
             }
         }
         if (Input.GetKeyDown(KeyCode.I))
@@ -108,7 +117,7 @@ public class Become : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             //call pickup function
-            actionPickup = GetComponentInParent<Pickupper>();
+//            actionPickup = GetComponentInParent<Pickupper>();
             actionPickup.PickUp();
             
         }

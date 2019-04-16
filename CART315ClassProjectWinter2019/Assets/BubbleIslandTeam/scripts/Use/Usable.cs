@@ -29,6 +29,7 @@ public class Usable : MonoBehaviour
      * item has been used
      */
     public UnityEvent doAfterBeingUsed;
+    public UnityEvent doBeforeUse;
 
     private void Start()
     {
@@ -42,6 +43,11 @@ public class Usable : MonoBehaviour
      */
     public void Use()
     {
+        if (doBeforeUse != null)
+        {
+            doBeforeUse.Invoke();
+        }
+        
         //Get the object in front of this player
         //Call Use(useTarget, shouldDestroyAfterUse)
         RaycastHit hit;
@@ -80,6 +86,10 @@ public class Usable : MonoBehaviour
      */
     public void Use(GameObject target)
     {
+        if (doBeforeUse != null)
+        {
+            doBeforeUse.Invoke();
+        }
         //Trigger the particles and sound
         //If shouldDestroyAfterUse is true, then destroy this object
         //Finally, do whatever after used

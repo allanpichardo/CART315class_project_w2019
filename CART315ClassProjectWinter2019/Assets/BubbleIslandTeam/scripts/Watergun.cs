@@ -12,6 +12,7 @@ public class Watergun : MonoBehaviour
     {
         onWaterCollided = new List<UnityEvent>();
         particleLauncher = GetComponentInChildren<ParticleLauncher>();
+        GetComponent<Rigidbody>().freezeRotation = true;
     }
 
     public void Collision(GameObject gameObject)
@@ -22,18 +23,19 @@ public class Watergun : MonoBehaviour
         }
     }
 
+    IEnumerator TemporaryShoot()
+    {
+        particleLauncher.SetShooting(true);
+        yield return new WaitForSeconds(1.0f);
+        particleLauncher.SetShooting(false);
+    }
+
+    public void Shoot()
+    {
+        StartCoroutine(TemporaryShoot());
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            particleLauncher.SetShooting(true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.J))
-        {
-            particleLauncher.SetShooting(false);
-        }
-        
-        transform.Rotate(Vector3.right, Mathf.Sin(Time.deltaTime * 100));
     }
 }

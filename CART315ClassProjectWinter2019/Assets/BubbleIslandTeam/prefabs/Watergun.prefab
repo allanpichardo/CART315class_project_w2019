@@ -5186,9 +5186,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2592746731740651011}
   - component: {fileID: 9211254078401231452}
+  - component: {fileID: 1855330468309747341}
+  - component: {fileID: 8641575787837318745}
+  - component: {fileID: 7167574983437347555}
   m_Layer: 0
   m_Name: Watergun
-  m_TagString: Untagged
+  m_TagString: pickupable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5229,6 +5232,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onWaterCollided: []
+--- !u!65 &1855330468309747341
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211651790788791606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.13555, y: 3.3082376, z: 16.00256}
+  m_Center: {x: 0.5330477, y: -0.28205514, z: 8.483931}
+--- !u!114 &8641575787837318745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211651790788791606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f0cd0d0b56c4bb599d8355aefe7fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldBeDestroyedAfterUse: 0
+  OnItemUsed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!54 &7167574983437347555
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211651790788791606}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &9117937374256925908
 GameObject:
   m_ObjectHideFlags: 0
@@ -10078,11 +10128,6 @@ PrefabInstance:
       propertyPath: ShapeModule.radius.value
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 728302796671160333, guid: 7e8231506477144d68cb0a71c1f71ae0,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 09449e06717b54d9fb41c5532231273e, type: 2}
     - target: {fileID: 728302796671160334, guid: 7e8231506477144d68cb0a71c1f71ae0,
         type: 3}
       propertyPath: particleLauncher
@@ -10093,6 +10138,11 @@ PrefabInstance:
       propertyPath: dropletDecalPool
       value: 
       objectReference: {fileID: 1574111274645205296}
+    - target: {fileID: 728302796671160333, guid: 7e8231506477144d68cb0a71c1f71ae0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 09449e06717b54d9fb41c5532231273e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e8231506477144d68cb0a71c1f71ae0, type: 3}
 --- !u!4 &7637152168128202973 stripped
