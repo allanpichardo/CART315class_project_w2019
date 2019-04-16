@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
         if (player)
         {
             float distance = Vector3.Distance(player.transform.position, transform.position);
+            Debug.Log(this.name + " " + distance);
             if (distance <= lookDistance)
             {
                 agent.SetDestination(player.transform.position);
@@ -33,7 +34,7 @@ public class Enemy : MonoBehaviour
                 float x = Random.Range(0, lookDistance);
                 float y = 0.0f;
                 float z = Random.Range(0, lookDistance);
-                agent.SetDestination(player.transform.position + new Vector3(x, y, z));
+                agent.SetDestination(transform.position + new Vector3(x, y, z));
             }
         }
     }
