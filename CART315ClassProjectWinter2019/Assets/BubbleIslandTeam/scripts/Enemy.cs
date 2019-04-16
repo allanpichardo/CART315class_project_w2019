@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
@@ -24,18 +26,37 @@ public class Enemy : MonoBehaviour
         if (player)
         {
             float distance = Vector3.Distance(player.transform.position, transform.position);
-            Debug.Log(this.name + " " + distance);
             if (distance <= lookDistance)
             {
+                if (!agent.isStopped)
+                {
+                    agent.ResetPath();
+                }
                 agent.SetDestination(player.transform.position);
             }
-            else if(patrol && agent.remainingDistance < 1.0f)
+            else if(patrol && HasReachedDestination())
             {
-                float x = Random.Range(0, lookDistance);
+                float x = Random.Range(-lookDistance, lookDistance);
                 float y = 0.0f;
-                float z = Random.Range(0, lookDistance);
+                float z = Random.Range(-lookDistance, lookDistance);
                 agent.SetDestination(transform.position + new Vector3(x, y, z));
             }
         }
+    }
+
+    private bool HasReachedDestination()
+    {
+        if (!agent.pathPending)
+        {
+            if (agent.remainingDistance <= agent.stoppingDistance)
+            {
+                if (!agent.hasPath || Math.Abs(agent.velocity.sqrMagnitude) < 0.001f)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }

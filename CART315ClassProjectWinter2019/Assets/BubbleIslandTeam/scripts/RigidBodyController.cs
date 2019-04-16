@@ -41,17 +41,16 @@ public class RigidBodyController : MonoBehaviour
 
     public void Rotate()
     {
-        //if (Input.GetMouseButton(0))
-        //{
-            rotateYAxis += 3 * Input.GetAxis("Mouse X");
-            rotateXAxis -= 3 * Input.GetAxis("Mouse Y");
-//       // }
+        rotateYAxis += 3 * Input.GetAxis("Mouse X");
+        rotateXAxis -= 3 * Input.GetAxis("Mouse Y");
+        
         characterBod.transform.rotation = Quaternion.Euler(0, rotateYAxis, 0);
 
         Become cam = GameObject.Find("Camera_Become").GetComponent<Become>();
 
         if (cam.GetCamMode() == 1)
         {
+            Mathf.Clamp(rotateXAxis, -15f, 15f);
             cam.gameObject.transform.rotation = Quaternion.Euler(rotateXAxis, rotateYAxis, 0);
         }
         else
