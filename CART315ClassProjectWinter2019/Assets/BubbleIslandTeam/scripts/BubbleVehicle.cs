@@ -53,7 +53,7 @@ public class BubbleVehicle : MonoBehaviour
             Cam.gameObject.transform.parent.parent = gameObject.transform;
             if(Cam.gameObject.GetComponent<Become>().GetCamMode() == 1)
             {
-                Cam.gameObject.transform.localPosition = new Vector3(0, 0, 0);
+                Cam.gameObject.transform.localPosition = new Vector3(0.1f, 0.15f, 0);
             }
             else
             {
