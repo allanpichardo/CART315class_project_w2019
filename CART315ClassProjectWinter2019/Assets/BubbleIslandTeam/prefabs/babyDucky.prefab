@@ -239,7 +239,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5977417879370357827}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e0374a8085908424cbd436cea356504a, type: 2}
   m_CullingMode: 0
@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 5977417879855721507}
   - component: {fileID: 5977417879855721517}
   - component: {fileID: 5977417879855721506}
+  - component: {fileID: 3110315262033913859}
   m_Layer: 0
   m_Name: BubbleIslandBabyDuck_0004
   m_TagString: Untagged
@@ -330,3 +331,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!195 &3110315262033913859
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977417879855721504}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 4.0678
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 3.0118032
+  m_BaseOffset: 1.5059016
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
