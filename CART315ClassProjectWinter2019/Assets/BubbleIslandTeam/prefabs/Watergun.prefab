@@ -5187,8 +5187,8 @@ GameObject:
   - component: {fileID: 2592746731740651011}
   - component: {fileID: 9211254078401231452}
   - component: {fileID: 1855330468309747341}
-  - component: {fileID: 8641575787837318745}
   - component: {fileID: 7167574983437347555}
+  - component: {fileID: 2057491181838567554}
   m_Layer: 0
   m_Name: Watergun
   m_TagString: pickupable
@@ -5245,24 +5245,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 22.13555, y: 3.3082376, z: 16.00256}
   m_Center: {x: 0.5330477, y: -0.28205514, z: 8.483931}
---- !u!114 &8641575787837318745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8211651790788791606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51f0cd0d0b56c4bb599d8355aefe7fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shouldBeDestroyedAfterUse: 0
-  OnItemUsed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!54 &7167574983437347555
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5279,6 +5261,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2057491181838567554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211651790788791606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f0cd0d0b56c4bb599d8355aefe7fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldBeDestroyedAfterUse: 0
 --- !u!1 &9117937374256925908
 GameObject:
   m_ObjectHideFlags: 0

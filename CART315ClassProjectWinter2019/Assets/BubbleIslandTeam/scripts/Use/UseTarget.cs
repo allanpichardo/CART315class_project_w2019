@@ -5,24 +5,29 @@ using UnityEngine.Events;
 
 public class UseTarget : MonoBehaviour
 {
+    [System.Serializable]
+    public class UseEvent : UnityEvent<bool>
+    {
+    }
+    
     public bool shouldBeDestroyedAfterUse = false;
     /**
      * In the Unity editor, set a callback function
      * that will be triggered whenever this
      * use target gets used
      */
-    public UnityEvent OnItemUsed;
+    public UseEvent OnItemUsed;
 
     /**
      * Can be called by another script to perform
      * "use" on this target. This causes the
      * callback to trigger
      */
-    public void Use()
+    public void Use(bool engage = false)
     {
         if (OnItemUsed != null)
         {
-            OnItemUsed.Invoke();
+            OnItemUsed.Invoke(engage);
             
             if (shouldBeDestroyedAfterUse)
             {
