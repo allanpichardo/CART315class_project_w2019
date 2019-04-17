@@ -17,9 +17,8 @@ GameObject:
   - component: {fileID: 6662406728276785814}
   - component: {fileID: 6662406728276785801}
   - component: {fileID: 4795774875343472811}
-  - component: {fileID: 2260648234696596307}
   m_Layer: 12
-  m_Name: BubbleVehicle
+  m_Name: BubbleVehicle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,17 +166,4 @@ CapsuleCollider:
   m_Radius: 0.06
   m_Height: 0.72
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &2260648234696596307
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6662406728276785822}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.88
   m_Center: {x: 0, y: 0, z: 0}
