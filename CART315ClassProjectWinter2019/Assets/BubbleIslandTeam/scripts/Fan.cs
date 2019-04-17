@@ -10,8 +10,8 @@ public class Fan : MonoBehaviour
     {
         if (other.gameObject.layer == 12 && other.attachedRigidbody != null)
         {
-            Debug.Log("FanOn");
             other.attachedRigidbody.AddForce(Vector3.up * thrust, ForceMode.Impulse);
+//            other.gameObject.transform.Translate(Vector3.up * thrust);
         }
     }
 
