@@ -1,3 +1,6 @@
+!docs/*
+!docs/Build/*
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
