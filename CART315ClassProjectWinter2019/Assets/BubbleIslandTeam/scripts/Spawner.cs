@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(waitTime);
-            if (numberOfDucks <= maxSpawnNumber)
+            if (numberOfDucks < maxSpawnNumber)
             {
                 Spawn();
             }

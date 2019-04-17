@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/BubbleIslandTeam/MainMenuBubble.unity
+    guid: b530f23dcd182424682961be66cb1695
+  - enabled: 1
+    path: Assets/BubbleIslandTeam/BubbleIsland.unity
+    guid: 90ba50a52ff274ed0a62c9fd111901fb
   m_configObjects: {}
