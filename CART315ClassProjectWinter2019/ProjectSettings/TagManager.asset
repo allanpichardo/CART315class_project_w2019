@@ -33,7 +33,7 @@ TagManager:
   - Bubble
   - Platforms
   - terrain
-  - 
+  - Stream
   - 
   - 
   - 
@@ -53,4 +53,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Stream
+    uniqueID: 1988472651
     locked: 0

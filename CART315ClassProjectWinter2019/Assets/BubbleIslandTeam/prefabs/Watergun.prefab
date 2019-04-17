@@ -5274,6 +5274,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shouldBeDestroyedAfterUse: 0
+  OnItemUsed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UseTarget+UseEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &9117937374256925908
 GameObject:
   m_ObjectHideFlags: 0
@@ -9956,8 +9961,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1988472651
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 4
   m_SortMode: 0

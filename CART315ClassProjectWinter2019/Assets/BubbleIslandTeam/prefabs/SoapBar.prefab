@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5681933445375071486}
   - component: {fileID: 8790757963965442300}
   - component: {fileID: 8508508182298502160}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pasted__polySurface46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7491875929854446065}
   - component: {fileID: 942620449664299484}
   - component: {fileID: 925624702507399561}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SoapBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,8 +162,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e196151b9d5fa47779ba661d561b42a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life: 5
   lookDistance: 60
   patrol: 0
+  onEnemyDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &925624702507399561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -186,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3079736798695164411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pasted__polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
