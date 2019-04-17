@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
 
+    public AudioClip explosion;
+    public GameObject bubble;
     private AudioSource AS;
     private void Awake()
     {
@@ -19,6 +22,8 @@ public class EndGame : MonoBehaviour
     private IEnumerator Delay(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        print("break");
+        AS.PlayOneShot(explosion);
+        Destroy(bubble);
+        yield return new WaitForSeconds(waitTime);
     }
 }
