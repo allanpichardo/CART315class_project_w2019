@@ -72,7 +72,6 @@ public class Become : MonoBehaviour
         controller.Locomote(new Vector3(horizontal, 0, vertical));
         controller.Rotate();
 
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             controller.Jump();

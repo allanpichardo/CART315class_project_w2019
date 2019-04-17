@@ -25,7 +25,7 @@ public class BubbleVehicle : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print(collision.gameObject);
-        if (collision.gameObject.tag != "ActivePlayer")
+        if (collision.gameObject.layer == 10 || collision.gameObject.layer == 4)
         {
             print("pop bubble");
 
@@ -45,11 +45,10 @@ public class BubbleVehicle : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "ActivePlayer")
         {
-            print("Inside bubble");
             Cam.gameObject.transform.parent.parent = gameObject.transform;
             if(Cam.gameObject.GetComponent<Become>().GetCamMode() == 1)
             {
@@ -67,9 +66,19 @@ public class BubbleVehicle : MonoBehaviour
                     child.transform.localPosition = new Vector3(0, child.transform.localPosition.y, 0);
                 }
             }
+
+            other.attachedRigidbody.freezeRotation = false;
         }
 
     }
 
-
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "ActivePlayer")
+        {
+            other.gameObject.transform.localPosition = new Vector3(0,0,0);
+            other.attachedRigidbody.freezeRotation = true;
+        }
+    }
+    
 }
