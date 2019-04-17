@@ -1,5 +1,4 @@
-!docs/*
-!docs/Build/
+!docs/**/*
 
 [Ll]ibrary/
 [Tt]emp/
@@ -114,3 +113,6 @@ fabric.properties
 **___jb_tmp___
 
 # End of https://www.gitignore.io/api/rider
+
+!docs/**/*
+!docs/Build/*
