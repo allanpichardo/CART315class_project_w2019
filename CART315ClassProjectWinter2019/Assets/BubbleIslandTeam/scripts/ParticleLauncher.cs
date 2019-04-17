@@ -32,6 +32,7 @@ public class ParticleLauncher : MonoBehaviour {
         }
 
         parent.Collision(other);
+        
     }
 
     void EmitAtLocation(ParticleCollisionEvent particleCollisionEvent)

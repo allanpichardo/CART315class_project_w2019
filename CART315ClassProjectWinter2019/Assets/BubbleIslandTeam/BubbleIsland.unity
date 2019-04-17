@@ -13429,6 +13429,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 9211254078401231452, guid: 78cde1bfe5d47480fac571f32b56a6a1,
+        type: 3}
+      propertyPath: onWaterCollided.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9211254078401231452, guid: 78cde1bfe5d47480fac571f32b56a6a1,
+        type: 3}
+      propertyPath: onWaterCollided.Array.data[0].m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
     - target: {fileID: 8641575787837318745, guid: 78cde1bfe5d47480fac571f32b56a6a1,
         type: 3}
       propertyPath: OnItemUsed.m_PersistentCalls.m_Calls.Array.size
