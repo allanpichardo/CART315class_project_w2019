@@ -5886,7 +5886,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.25
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -10132,6 +10132,26 @@ PrefabInstance:
         type: 3}
       propertyPath: VelocityModule.z.minScalar
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 728302796671160320, guid: 7e8231506477144d68cb0a71c1f71ae0,
+        type: 3}
+      propertyPath: ForceModule.x.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 728302796671160320, guid: 7e8231506477144d68cb0a71c1f71ae0,
+        type: 3}
+      propertyPath: ForceModule.y.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 728302796671160320, guid: 7e8231506477144d68cb0a71c1f71ae0,
+        type: 3}
+      propertyPath: ForceModule.z.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 728302796671160320, guid: 7e8231506477144d68cb0a71c1f71ae0,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 728302796671160334, guid: 7e8231506477144d68cb0a71c1f71ae0,
         type: 3}
