@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -32,13 +34,12 @@ public class PlayerHealth : MonoBehaviour
         if (lives <= 0)
         {
             heart1.SetActive(false);
-            print("die");
+            SceneManager.LoadScene("BubbleIsland");
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        print(collision);
         if (collision.gameObject.tag == "enemy")
         {
             lives--;

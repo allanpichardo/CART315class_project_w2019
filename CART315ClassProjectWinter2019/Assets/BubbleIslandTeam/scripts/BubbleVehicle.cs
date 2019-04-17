@@ -22,28 +22,28 @@ public class BubbleVehicle : MonoBehaviour
         }
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    print(collision.gameObject);
-    //    if (collision.gameObject.tag != "ActivePlayer")
-    //    {
-    //        print("pop bubble");
+    private void OnCollisionEnter(Collision collision)
+    {
+        print(collision.gameObject);
+        if (collision.gameObject.tag != "ActivePlayer")
+        {
+            print("pop bubble");
 
-    //        foreach (Transform child in transform)
-    //        {
-    //            if (child.tag == "ActivePlayer")
-    //            {
-    //                Children.Add(child.gameObject);
-    //                child.transform.parent = null;
-    //            }
-    //        }
-    //        if (Children.Count != 0)
-    //        {
-    //            GameObject.Find("Camera_Become").transform.parent = Children[0].transform;
-    //        }
-    //        Destroy(gameObject);
-    //    }
-    //}
+            foreach (Transform child in transform)
+            {
+                if (child.tag == "ActivePlayer")
+                {
+                    Children.Add(child.gameObject);
+                    child.transform.parent = null;
+                }
+            }
+            if (Children.Count != 0)
+            {
+                GameObject.Find("Camera_Become").transform.parent = Children[0].transform;
+            }
+            Destroy(gameObject);
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {
