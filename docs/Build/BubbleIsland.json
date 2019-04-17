@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Bubble Island",
+"dataUrl": "BubbleIsland.data.unityweb",
+"wasmCodeUrl": "BubbleIsland.wasm.code.unityweb",
+"wasmFrameworkUrl": "BubbleIsland.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#274D80",
+"cacheControl": {"default": "must-revalidate"}
+}
