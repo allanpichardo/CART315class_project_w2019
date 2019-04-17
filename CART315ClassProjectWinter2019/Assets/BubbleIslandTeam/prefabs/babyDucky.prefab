@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8360548986282123589}
   - component: {fileID: 2986687274333511666}
   - component: {fileID: 5770508888738840078}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: babyDucky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,8 +235,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e196151b9d5fa47779ba661d561b42a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life: 5
   lookDistance: 45
   patrol: 1
+  onEnemyDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &5977417879370357827
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5977417879370357837}
   - component: {fileID: 5977417879370357826}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +305,7 @@ GameObject:
   - component: {fileID: 5977417879855721507}
   - component: {fileID: 5977417879855721517}
   - component: {fileID: 5977417879855721506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BubbleIslandBabyDuck_0004
   m_TagString: Untagged
   m_Icon: {fileID: 0}

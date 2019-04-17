@@ -32,6 +32,7 @@ public class Become : MonoBehaviour
         firstCamPosition = GetComponent<Transform>().localPosition;
         thirdCamPosition = firstCamPosition + new Vector3(0,5,-5);
         actionThrow = GetComponent<Throw>();
+        actionPickup = transform.root.GetComponent<Pickupper>() != null ? transform.root.GetComponent<Pickupper>() : transform.root.GetComponentInChildren<Pickupper>();
         
         // set the current object to ActivePlayer
         gameObject.transform.parent.tag = "ActivePlayer";
@@ -90,7 +91,7 @@ public class Become : MonoBehaviour
                 CamMode++;
             StartCoroutine(CamChange());
         }
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetMouseButtonDown(0))
         {
             if (actionPickup && actionPickup.IsHoldingObject())
             {
@@ -98,6 +99,34 @@ public class Become : MonoBehaviour
                 if (usable)
                 {
                     usable.Use();
+                }
+                else
+                {
+                    UseTarget target = actionPickup.HeldObject().GetComponent<UseTarget>();
+                    if (target)
+                    {
+                        target.Use(true);
+                    }
+                }
+            }
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (actionPickup && actionPickup.IsHoldingObject())
+            {
+                Usable usable = actionPickup.HeldObject().GetComponent<Usable>();
+                if (usable)
+                {
+                    usable.Use();
+                }
+                else
+                {
+                    UseTarget target = actionPickup.HeldObject().GetComponent<UseTarget>();
+                    if (target)
+                    {
+                        target.Use(false);
+                    }
                 }
             }
         }
@@ -108,7 +137,7 @@ public class Become : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             //call pickup function
-            actionPickup = GetComponentInParent<Pickupper>();
+//            actionPickup = GetComponentInParent<Pickupper>();
             actionPickup.PickUp();
             
         }

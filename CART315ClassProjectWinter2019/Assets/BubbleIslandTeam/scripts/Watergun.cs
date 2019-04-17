@@ -6,12 +6,15 @@ using UnityEngine.Events;
 public class Watergun : MonoBehaviour
 {
     public List<UnityEvent> onWaterCollided;
+    private AudioSource audioSource;
     private ParticleLauncher particleLauncher;
     
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         onWaterCollided = new List<UnityEvent>();
         particleLauncher = GetComponentInChildren<ParticleLauncher>();
+        GetComponent<Rigidbody>().freezeRotation = true;
     }
 
     public void Collision(GameObject gameObject)
@@ -22,18 +25,25 @@ public class Watergun : MonoBehaviour
         }
     }
 
-    void Update()
+    IEnumerator TemporaryShoot()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            particleLauncher.SetShooting(true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.J))
-        {
-            particleLauncher.SetShooting(false);
-        }
-        
-        transform.Rotate(Vector3.right, Mathf.Sin(Time.deltaTime * 100));
+        particleLauncher.SetShooting(true);
+        audioSource.Play();
+        yield return new WaitForSeconds(1.0f);
+        particleLauncher.SetShooting(false);
     }
+
+    public void Shoot(bool shoot)
+    {
+        particleLauncher.SetShooting(shoot);
+        if (shoot)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+    }
+
 }
