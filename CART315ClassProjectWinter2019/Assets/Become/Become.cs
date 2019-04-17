@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Become : MonoBehaviour
 {
@@ -43,6 +44,13 @@ public class Become : MonoBehaviour
     //we want to update every frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            Application.Quit();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("BubbleIsland"); 
+        }
         PlayerActions();
 
         //turn the camera towards the clicked object and make sure it's a player
