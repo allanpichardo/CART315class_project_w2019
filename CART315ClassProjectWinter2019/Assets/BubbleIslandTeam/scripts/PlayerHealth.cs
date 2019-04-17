@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class PlayerHealth : MonoBehaviour
@@ -11,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
+    public GameObject redImage;
 
     private void Awake()
     {
@@ -22,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
         heart1.SetActive(true);
         heart2.SetActive(true);
         heart3.SetActive(true);
+        redImage.SetActive(false);
         lives = 3;
     }
 
@@ -47,8 +50,15 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "enemy")
         {
+            StartCoroutine(Delay(0.1f));
             lives--;
             AS.Play();
         }
+    }
+    private IEnumerator Delay(float waitTime)
+    {
+        redImage.SetActive(true);
+        yield return new WaitForSeconds(waitTime);
+        redImage.SetActive(false);
     }
 }
