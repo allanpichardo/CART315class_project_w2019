@@ -8,7 +8,6 @@ public class BubbleEntrance : MonoBehaviour
     public GameObject MaskZone;
     public GameObject DomeMask;
     public GameObject title;
-    public GameObject Vehicle;
     RaycastHit hit;
     private int counter;
 
@@ -16,7 +15,7 @@ public class BubbleEntrance : MonoBehaviour
     {
         Cam = GameObject.Find("Camera_Become").GetComponent<Camera>();
         title.SetActive(false);
-        MaskZone.transform.localPosition = new Vector3(0,0,-(GetComponent<Renderer>().bounds.extents.x - (MaskZone.GetComponent<Renderer>().bounds.extents.z / 2)) + 0.4f);
+        MaskZone.transform.localPosition = new Vector3(0,0.5f,-(GetComponent<Renderer>().bounds.extents.x - (MaskZone.GetComponent<Renderer>().bounds.extents.z / 2)) + 0.4f);
         counter = 0;
     }
 
@@ -36,12 +35,6 @@ public class BubbleEntrance : MonoBehaviour
         {
             counter++;
         }
-        if(counter == 2)
-        {
-            MaskZone.transform.localScale = new Vector3(0, 0, 0);
-            Instantiate(Vehicle, new Vector3(MaskZone.transform.position.x, MaskZone.transform.position.y + 1.2f, MaskZone.transform.position.z), Quaternion.identity);
-            counter++;
-        }
 
     }
 
@@ -59,7 +52,7 @@ public class BubbleEntrance : MonoBehaviour
             if (Physics.Raycast(Cam.transform.parent.gameObject.transform.position, Cam.transform.parent.gameObject.transform.forward, out hit, 10.0f))
             {
                 //print(hit.collider.gameObject.name);
-                if (hit.collider.gameObject.name == "DomeMaterial" || hit.collider.gameObject.name == "Dome")
+                if (hit.collider.gameObject.name == "Dome")
                 {
                     Vector3 localTarget = transform.InverseTransformPoint(Cam.transform.parent.gameObject.transform.position);
 
@@ -112,8 +105,8 @@ public class BubbleEntrance : MonoBehaviour
 
         if (x > 20 && z > 20)
         {
-            x = 10;
-            z = 10;
+            x = 20;
+            z = 20;
         }
 
         if (y > 0.25f)

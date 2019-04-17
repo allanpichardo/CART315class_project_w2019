@@ -133,20 +133,14 @@ public class Become : MonoBehaviour
         {
             //call spawn function
         }
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             //call pickup function
 //            actionPickup = GetComponentInParent<Pickupper>();
             actionPickup.PickUp();
             
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            //call eat function
-            actionEat = GetComponentInParent<Eat>();
-            actionEat.EatFood();
 
-        }
         if (Input.GetKeyDown(KeyCode.T))
         {
             if (actionPickup && actionThrow && actionPickup.IsHoldingObject())

@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    private AudioSource AS;
     private int lives;
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
 
+    private void Awake()
+    {
+        AS = GetComponent<AudioSource>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "enemy")
         {
             lives--;
+            AS.Play();
         }
     }
 }
