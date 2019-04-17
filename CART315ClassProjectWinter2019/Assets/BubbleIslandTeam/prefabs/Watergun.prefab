@@ -10128,6 +10128,11 @@ PrefabInstance:
       propertyPath: ShapeModule.radius.value
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 728302796671160320, guid: 7e8231506477144d68cb0a71c1f71ae0,
+        type: 3}
+      propertyPath: VelocityModule.z.minScalar
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 728302796671160334, guid: 7e8231506477144d68cb0a71c1f71ae0,
         type: 3}
       propertyPath: particleLauncher

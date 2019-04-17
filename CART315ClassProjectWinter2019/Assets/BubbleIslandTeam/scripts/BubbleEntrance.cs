@@ -32,7 +32,7 @@ public class BubbleEntrance : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Cam.transform.parent.gameObject)
+        if (Cam && other.gameObject == Cam.transform.parent.gameObject)
         {
             counter++;
         }
@@ -52,7 +52,7 @@ public class BubbleEntrance : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject == Cam.transform.parent.gameObject)
+        if (Cam && other.gameObject == Cam.transform.parent.gameObject)
         {
             Debug.DrawRay(Cam.transform.parent.gameObject.transform.position, Cam.transform.parent.gameObject.transform.forward * 10, Color.red);
 

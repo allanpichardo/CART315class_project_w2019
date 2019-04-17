@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6662406728276785801}
   - component: {fileID: 4795774875343472811}
   - component: {fileID: 2260648234696596307}
+  - component: {fileID: 3336385451725714904}
   m_Layer: 12
   m_Name: BubbleVehicle
   m_TagString: Untagged
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6662406728276785822}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff6c5d22f48ca41aca39156e386e7bbe, type: 3}
   m_Name: 
@@ -150,10 +151,10 @@ BoxCollider:
   m_GameObject: {fileID: 6662406728276785822}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.05478523, z: 1}
-  m_Center: {x: 0.065702714, y: -0.4036465, z: 0.04210971}
+  m_Size: {x: 1.103757, y: 0.08, z: 1.0008087}
+  m_Center: {x: 0.013824268, y: -0.44, z: 0.04170566}
 --- !u!136 &4795774875343472811
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -180,4 +181,17 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.88
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &3336385451725714904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662406728276785822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
