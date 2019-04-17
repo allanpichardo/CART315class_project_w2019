@@ -124,6 +124,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1350501916}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &952203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04981322, y: 0.030133016, z: 0.033386476}
+  m_Center: {x: 0.0016554104, y: -0.00000751358, z: 0.0239848}
+--- !u!114 &952204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e196151b9d5fa47779ba661d561b42a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 100
+  lookDistance: 0
+  patrol: 0
+  onEnemyDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3751524207811530659}
+        m_MethodName: OnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &85338826
 GameObject:
   m_ObjectHideFlags: 0
@@ -21613,6 +21657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1896937390}
+  - component: {fileID: 1896937391}
   m_Layer: 9
   m_Name: Grabpoint
   m_TagString: Untagged
@@ -21634,6 +21679,18 @@ Transform:
   m_Father: {fileID: 1279326519}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
+--- !u!114 &1896937391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896937389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392e721cc8c334aa5bb6893f57fcc81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1910867280
 GameObject:
   m_ObjectHideFlags: 0
@@ -21967,7 +22024,7 @@ MeshCollider:
   m_GameObject: {fileID: 952201}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -23255,6 +23312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8143397490548200516}
+  - component: {fileID: 3751524207811530659}
   m_Layer: 0
   m_Name: duckEmpty
   m_TagString: Untagged
@@ -23262,6 +23320,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3751524207811530659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751524207811530658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1027f9e1c0fe14aa78854847f093c0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3773001556941824729
 GameObject:
   m_ObjectHideFlags: 0
